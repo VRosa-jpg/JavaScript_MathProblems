@@ -60,12 +60,23 @@ let is30pergallon = 30;
 let is28pergallon = 28;
 let is23pergallon = 23;
 
-// Calculations: How many hours it will take
-const speed55theHours = totalDistance / is55mile;
-const speed60theHours = totalDistance / is60mile;
-const speed75theHours = totalDistance / is75mile;
-
-console.log(speed55theHours)
+// Calculations: How many hours will the trip
+const speed55theHours = totalDistance / is55mile; // 27 hours
+const speed60theHours = totalDistance / is60mile; // 25 hours
+const speed75theHours = totalDistance / is75mile; // 20 hours
 
 
 
+// Calculations: How many gallons will you need
+const isGalOnTrip55 = totalDistance / is30pergallon // 50 gallons
+const isGalOnTrip60 = totalDistance / is28pergallon // 53 gallons
+const isGalOnTrip75 = totalDistance / is23pergallon // 65 gallons
+
+console.log(isGalOnTrip60)
+
+// Calculations: Will budegt be enough to cover fuel
+const costOn55 = isGalOnTrip55 * perGallon // 150$
+const costOn60 = isGalOnTrip60 * perGallon // 159$
+const costOn75 = isGalOnTrip75 * perGallon // 195$
+
+// Best options:
